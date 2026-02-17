@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* BACKGROUND */
+.auth-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0b2e22, #124b36);
+}
+
+/* GLASS CARD */
+.auth-card {
+  width: 360px;
+  padding: 30px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(126, 217, 87, 0.35);
+  box-shadow: 0 0 30px rgba(126, 217, 87, 0.35);
+  color: #eaf7f0;
+  text-align: center;
+}
+
+/* TITLE */
+.auth-card h2 {
+  margin-bottom: 25px;
+}
+
+/* INPUTS */
+.auth-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(126, 217, 87, 0.35);
+  background: rgba(255, 255, 255, 0.08);
+  color: #eaf7f0;
+  outline: none;
+}
+
+.auth-card input::placeholder {
+  color: #b7d9c6;
+}
+
+/* BUTTON */
+.auth-card button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  background: linear-gradient(135deg, #1f6f43, #7ed957);
+  color: #083b26;
+  transition: transform 0.2s ease;
+}
+
+.auth-card button:hover {
+  transform: scale(1.03);
+}
+
+/* MESSAGE */
+.auth-msg {
+  margin-top: 12px;
+  color: #b7d9c6;
+}
+
+/* LINK */
+.auth-link {
+  margin-top: 15px;
+  color: #b7d9c6;
+}
+
+.auth-link span {
+  color: #7ed957;
+  cursor: pointer;
+  font-weight: bold;
+}

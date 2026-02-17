@@ -1,0 +1,96 @@
+/* Full page background */
+.potato-container {
+  min-height: 100vh;
+  background-color: #0b2e22;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+.header {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Card box */
+.card {
+  background: rgba(255, 255, 255, 0.96);
+  width: 380px;
+  padding: 22px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+}
+
+/* File input */
+.file-input {
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* Image preview */
+.preview-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Submit button */
+.submit-btn {
+  margin-top: 18px;
+  padding: 12px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  background-color: #be6a77;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #a85b67;
+}
+
+.submit-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Result box */
+.result {
+  margin-top: 18px;
+  padding: 12px;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #333;
+}
+
+.result p {
+  margin: 6px 0;
+  font-weight: 600;
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+  .card {
+    width: 90%;
+  }
+
+  .header {
+    font-size: 24px;
+  }
+}

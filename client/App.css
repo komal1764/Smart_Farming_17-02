@@ -1,0 +1,63 @@
+:root {
+  --primary-dark: #0f3d2e;
+  --secondary-green: #1f6f43;
+  --accent-green: #7ed957;
+
+  --bg-start: #0b2e22;
+  --bg-end: #124b36;
+
+  --glass-bg: rgba(255, 255, 255, 0.12);
+  --text-primary: #eaf7f0;
+  --text-muted: #b7d9c6;
+  --border-glow: rgba(126, 217, 87, 0.35);
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, var(--bg-start), var(--bg-end));
+  color: var(--text-primary);
+}
+
+
+
+.glass-card {
+  width: 360px;
+  padding: 30px;
+  background: var(--glass-bg);
+  border-radius: 16px;
+  border: 1px solid var(--border-glow);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 25px var(--border-glow);
+}
+
+.glass-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid var(--border-glow);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-primary);
+  outline: none;
+}
+
+.glass-input::placeholder {
+  color: var(--text-muted);
+}
+
+.primary-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: #083b26;
+  background: linear-gradient(
+    135deg,
+    var(--accent-green),
+    var(--secondary-green)
+  );
+}
